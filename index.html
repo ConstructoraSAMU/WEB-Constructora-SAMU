@@ -1,0 +1,111 @@
+<html lang="es">
+<head>
+    <script>
+        function enviarMensaje(){
+          var telefono = "+56976488024"; // aquí se debe colocar el número de teléfono de WhatsApp
+          var mensaje = "En este numero puedes hacer tus preguntas a uno de nuestros expertos y asesorarte de tus proyectos ;)."; // aquí se puede personalizar el mensaje
+          window.location.href = "https://wa.me/" +56976488024 + "?text=" + mensaje;
+        }
+      </script>
+    <script src="archivo.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Constructora SAMU LTDA.</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+    
+  <header>
+    <div class="logo">
+      <img src="Imagenes Pagina WEB/constructora samu.jfif"/>
+      <h1>Constructora SAMU LTDA.</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="inicio" class="hero">
+      <h2>¡Bienvenidos a Constructora SAMU LTDA.! </h2>
+      <p>Somos una empresa de construcción comprometida con la calidad y la satisfacción del cliente.</p>
+      <a href="#contacto">Contáctanos</a>
+    </section>
+    <section id="nosotros" class="section">
+      <h2>Nosotros</h2>
+      <p>Con más de 30 años de experiencia en el sector, nos hemos convertido en líderes en el mercado. Nuestro equipo está compuesto por expertos en construcción, arquitectura y diseño de interiores y exteriores. Nos aseguramos de cumplir con los estándares más altos de calidad y seguridad en cada proyecto que emprendemos.</p>
+      <img src="https://muchosnegociosrentables.com/wp-content/uploads/2020/11/crear-una-constructora-guia-completa.jpg" alt="Imagen de nosotros">
+    </section>
+    <section id="servicios" class="section">
+      <h2>Servicios</h2>
+      <ul>
+        <li>Construcción de casas y edificios</li>
+        <li>Remodelación y ampliación de viviendas</li>
+        <li>Diseño de interiores y exteriores</li>
+        <li>Asesoramiento en proyectos de construcción</li>
+      </ul>
+    </section>
+    <section id="proyectos" class="section">
+      <h2>Proyectos</h2>
+      <div class="project">
+        <img src="https://images.evisos.cl/2013/02/07/construccion-de-casas-ampliaciones_9280f0dbbb_3.jpg"alt="Imagen de nosotros" width="500" height="300" >
+        <h3>Proyecto 1</h3>
+        <p>Nuestro proyecto de construcción de una segunda vivienda ha sido todo un éxito. Diseñada con un estilo moderno y elegante, esta casa de dos pisos cuenta con amplios espacios abiertos y grandes ventanales que ofrecen una impresionante vista al mar. Además, la construcción con materiales de alta calidad garantiza una durabilidad a largo plazo y un bajo mantenimiento. El proyecto fue completado dentro del plazo y presupuesto acordados, y estamos orgullosos de haber entregado una vivienda de alta calidad y que cumple con las expectativas de nuestros clientes.</p>
+      </div>
+      <div class="project">
+        <img src="https://reformasintegrales10.com/wp-content/uploads/2022/02/piscina-hormigon-de-obra.jpg" alt="Imagen de nosotros" width="500" height="300"">
+        <h3>Proyecto 2</h3>
+        <p>Nuestro último proyecto consistió en construir una impresionante piscina de estilo moderno en una propiedad privada en la costa. Para lograrlo, nuestro equipo de expertos en construcción trabajó en estrecha colaboración con el cliente para diseñar una piscina que se adaptara perfectamente al entorno y a sus necesidades.
+
+            La piscina cuenta con características únicas, como una cascada que se integra perfectamente con el paisaje y luces LED que crean un ambiente cálido y acogedor por la noche. Además, se instalaron sistemas avanzados de filtración y limpieza para garantizar la calidad del agua y minimizar el mantenimiento.
+            
+            El resultado final fue una piscina espectacular que el cliente y su familia pueden disfrutar todo el año. El proyecto ha sido un éxito rotundo, y estamos orgullosos de haber superado las expectativas de nuestro cliente. Si estás buscando construir una piscina personalizada de alta calidad, ¡no dudes en contactarnos!</p>
+      </div>
+      <div class="project">
+        <img src="https://www.echeverrimontes.com/hubfs/remodelaci%C3%B3n%20de%20casas%20peque%C3%B1as.png" alt="Imagen de nosotros" width="500" height="300"">
+        <h3>Proyecto 3</h3>
+        <p>Este proyecto consistió en la remodelación completa de una casa por dentro, enfocándonos en la renovación de las terminaciones como la pintura, el yeso y los pisos. Se utilizó una combinación de materiales de alta calidad para lograr un acabado moderno y sofisticado. El resultado final fue una casa completamente transformada, con una nueva sensación de amplitud y comodidad para sus habitantes.</p>
+      </div>
+    </section>
+    <section id="contacto" class="section">
+        <section id="contacto" class="section">
+            <h2>Contacto</h2>
+            <form action="enviar.php" method="POST">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required>
+          
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+          
+              <label for="mensaje">Mensaje:</label>
+              <textarea id="mensaje" name="mensaje" required></textarea>
+          
+              <button type="submit">Enviar</button>
+            </form>
+
+            <div id="whatsapp-button">
+                <button onclick="enviarMensaje()">
+                  <img src="Imagenes Pagina WEB/whatsapp.png" alt="Botón de WhatsApp" width="50px">
+                </button>
+                <p>¡Contáctanos por WhatsApp!</p>
+              </div>
+             
+          </section>
+
+          <div class="social-container">
+            <a href="https://www.facebook.com/profile.php?id=100087881088213" class="facebook"><img src="Imagenes Pagina WEB/facebook.png" alt="Facebook">Facebook</a>
+            <a href="https://www.instagram.com/transportes_samu/" class="instagram"><img src="Imagenes Pagina WEB/instagram.png" alt="Instagram">Instagram</a>
+            <a href="https://twitter.com/SamuTransportes" class="twitter"><img src="Imagenes Pagina WEB/twitter.png" alt="Twitter">Twitter</a>
+          </div>
+      <h2
+      <html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructora SAMU LTDA.</title>
