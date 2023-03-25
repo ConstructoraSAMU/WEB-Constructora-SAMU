@@ -1,0 +1,226 @@
+<style>
+        body {
+    background-color: black;
+  }
+  
+  h1, h2, h3, h4, h5, h6, a {
+    color:rgb(255,139, 3);
+    
+}
+body {
+  background-color: rgb(235, 227, 227);
+  background-repeat: repeat;
+}
+
+#whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999; /* Asegura que el botón esté en la capa superior */
+}
+
+#whatsapp-button button {
+  background-color: green;
+  border: none;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+#whatsapp-button img {
+  width: 45px;
+}
+.whatsapp-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+}
+      /* Estilos para el header */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color:  rgb(19, 38, 61);
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+      }
+      .social-container a {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+      
+      .social-container .facebook {
+        background-color: #000000;
+        width: 80px;
+      }
+      
+      .social-container .facebook img {
+        display: block;
+        margin: 0 auto;
+        height: 24px;
+      }
+      
+      .social-container .instagram {
+        background-color: #000000;
+        width: 80px;
+      }
+      
+      .social-container .instagram img {
+        display: block;
+        margin: 0 auto;
+        height: 24px;
+      }
+      
+      .social-container .twitter {
+        background-color: #000000;
+        width: 80px;
+      }
+      
+      .social-container .twitter img {
+        display: block;
+        margin: 0 auto;
+        height: 24px;
+      }
+      
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+      .logo img {
+        width: 100px;
+        margin-right: 20px;
+      }
+      .logo h1 {
+        font-size: 24px;
+        margin: 0;
+        color: rgb(243, 186, 105);
+      }
+      nav ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      nav ul li {
+        margin-left: 20px;
+      }
+      nav ul li a {
+        color: rgb(243, 186, 105);
+        text-decoration: none;
+        font-size: 18px;
+      }
+      nav ul li a:hover {
+        color: #ffffff;
+      }
+      /* Estilos para la sección hero */
+      .hero {
+        background-image: url('hero.jpg');
+        background-size: cover;
+        background-position: center;
+        color: rgb(19, 38, 61);
+        text-align: center;
+        padding: 150px 0;
+      }
+      .hero h2 {
+        font-size: 42px;
+        margin: 0;
+      }
+      .hero p {
+        font-size: 24px;
+        margin-bottom: 40px;
+      }
+      .hero a {
+        display: inline-block;
+        background-color: #00A7E1;
+        color: #fff;
+        font-size: 18px;
+        text-decoration: none;
+        padding: 20px 40px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+      .hero a:hover {
+        background-color: #0086B3;
+      }
+      /* Estilos para las secciones */
+      .section {
+        padding: 100px 0;
+        text-align: center;
+      }
+      .section h2 {
+        font-size: 36px;
+        margin-bottom: 40px;
+      }
+      .section ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .section ul li {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      .project {
+        margin-bottom: 40px;
+      }
+      .project img {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .project h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .project p {
+        font-size: 18px;
+        margin: 0;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      
+      label, input, textarea {
+        margin-bottom: 10px;
+      }
+      
+      input, textarea {
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+      
+      button[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      button[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      
+      /* Estilos para el footer */
+      footer {
+        background-color: #222;
+        color: #
